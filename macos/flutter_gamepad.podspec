@@ -14,7 +14,6 @@ A new flutter plugin project.
 # Pretty sure this hack will only work when the pod is local path,
 # but does not seem to be any way to share code between the ios and
 # macos version of the plugin.
-  system("rm -rf Classes/ && mkdir Classes && cd .. && for file in `ls ios/Classes/`; do ln ios/Classes/$file macos/Classes/; done > /dev/null")
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
